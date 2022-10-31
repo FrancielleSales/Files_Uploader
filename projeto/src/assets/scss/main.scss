@@ -1,0 +1,76 @@
+$softBlue:  #A7DBD8 !default;
+$blue:      #69D2E7 !default;
+$white:     #FFFFFF !default;
+$lightGray: #E0E4CC !default;
+$darkGray:  #3D3D3D !default; 
+$orange:    #F38630 !default;
+$darkOrange:#FA6900 !default;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+    background-color: $white !important;
+}
+
+#app {
+    height: 100vh !important;
+}
+nav {
+    border-bottom: 2px solid $blue !important;
+    background-color: $softBlue !important;
+}
+
+.navbar-brand {
+    color: $darkOrange;
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.text-success {
+    color: $blue !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body {
+    color: $softBlue;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    border-top: 2px solid $blue !important;
+    background-color: $softBlue !important;
+    color: $darkGray;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 2px !important;
+    border: 0px;
+    box-shadow: 5px 5px 10px 0px $lightGray;
+    align-items: center !important;
+}
+
+.single {
+   .upload-input {
+        height: 100px !important;
+        width: 100px !important;
+        border-radius: 5px !important;
+        position: absolute ;
+        opacity: 0;
+   }
+
+   .uploader-mask {
+        height: 100px !important;
+        width: 100px !important;
+        border-radius: 5px !important;
+        border: 2px dashed $softBlue;
+
+        .uploader-icon {
+            height: 30px !important;
+            width: 30px !important; 
+        }
+   }
+}
